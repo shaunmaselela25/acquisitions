@@ -1,0 +1,13 @@
+services:
+  app:
+    build:
+      context: .
+      target: production
+    container_name: acquisitions-app-prod
+    env_file:
+      - .env.production
+    environment:
+      NODE_ENV: production
+    ports:
+      - '3000:3000'
+    restart: unless-stopped

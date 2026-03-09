@@ -352,3 +352,4 @@
 {"level":"info","message":"::ffff:127.0.0.1 - - [09/Mar/2026:10:25:02 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"PostmanRuntime/7.51.1\"","service":"acquisitions-api","timestamp":"2026-03-09T10:25:02.331Z"}
 {"level":"info","message":"Hello from acquisitions API!","service":"acquisitions-api","timestamp":"2026-03-09T10:25:41.843Z"}
 {"level":"info","message":"::ffff:127.0.0.1 - - [09/Mar/2026:10:25:41 +0000] \"GET / HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36\"","service":"acquisitions-api","timestamp":"2026-03-09T10:25:41.856Z"}
+{"level":"info","message":"127.0.0.1 - - [09/Mar/2026:12:11:40 +0000] \"GET /auth/sign-in HTTP/1.1\" 404 151 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36\"","service":"acquisitions-api","timestamp":"2026-03-09T12:11:40.941Z"}

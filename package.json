@@ -15,6 +15,9 @@
   },
   "scripts": {
     "dev": "node --watch src/index.js",
+    "start" : "node src/index.js",
+    "dev:docker": "docker compose -f docker-compose.dev.yml --env-file .env.development up --build",
+    "dev:docker:down": "docker compose -f docker-compose.dev.yml --env-file .env.development down",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "format": "prettier --write .",
