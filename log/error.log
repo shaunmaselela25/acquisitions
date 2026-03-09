@@ -1,0 +1,36 @@
+{"level":"error","message":"Error in signUp: signUpSchema is not defined","service":"acquisitions-api","timestamp":"2026-02-26T14:33:47.411Z"}
+{"level":"error","message":"Error in signUp: signUpSchema is not defined","service":"acquisitions-api","timestamp":"2026-02-26T14:36:55.283Z"}
+{"level":"error","message":"Error in signUp: signUpSchema is not defined","service":"acquisitions-api","timestamp":"2026-02-26T14:40:01.661Z"}
+{"level":"error","message":"Error in signUp: signUpSchema is not defined","service":"acquisitions-api","timestamp":"2026-02-26T14:40:05.049Z"}
+{"level":"error","message":"Error in signUp: signUpSchema is not defined","service":"acquisitions-api","timestamp":"2026-02-26T14:40:08.233Z"}
+{"level":"error","message":"Error in signUp: createUser is not defined","service":"acquisitions-api","timestamp":"2026-02-27T10:39:12.248Z"}
+{"level":"error","message":"Error in signUp: createUser is not defined","service":"acquisitions-api","timestamp":"2026-02-27T10:39:28.737Z"}
+{"level":"error","message":"Error in signUp: secretOrPrivateKey must have a value","service":"acquisitions-api","timestamp":"2026-02-27T10:58:32.489Z"}
+{"level":"error","message":"Error creating user: User already exists","service":"acquisitions-api","timestamp":"2026-02-27T11:05:50.429Z"}
+{"body":{"email":"admin@example.com","name":"Admin","password":"password1234","role":"admin"},"level":"error","message":"Error in signUp User already exists","service":"acquisitions-api","stack":"Error: User already exists\n    at createUser (file:///home/devplay/acquisitions/src/services/auth.service.js:26:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n    at async signUp (file:///home/devplay/acquisitions/src/controllers/auth.controller.js:28:18)","timestamp":"2026-02-27T11:05:50.435Z"}
+{"body":{"email":"admin@exam.com","name":"Admin1","password":"password12345","role":"admin"},"level":"error","message":"Error in signUp secretOrPrivateKey must have a value","service":"acquisitions-api","stack":"Error: secretOrPrivateKey must have a value\n    at module.exports [as sign] (/home/devplay/acquisitions/node_modules/jsonwebtoken/sign.js:111:20)\n    at signUp (file:///home/devplay/acquisitions/src/controllers/auth.controller.js:31:28)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)","timestamp":"2026-02-27T11:13:11.974Z"}
+{"error":{},"level":"error","message":"ArcJet middleware error","service":"acquisitions-api","timestamp":"2026-03-02T12:41:11.489Z"}
+{"error":{},"level":"error","message":"ArcJet middleware error","service":"acquisitions-api","timestamp":"2026-03-02T12:41:11.839Z"}
+{"error":{},"level":"error","message":"ArcJet middleware error","service":"acquisitions-api","timestamp":"2026-03-02T12:42:18.981Z"}
+{"error":{},"level":"error","message":"ArcJet middleware error","service":"acquisitions-api","timestamp":"2026-03-02T12:45:30.130Z"}
+{"error":{},"level":"error","message":"ArcJet middleware error","service":"acquisitions-api","timestamp":"2026-03-04T09:32:29.799Z"}
+{"error":{},"level":"error","message":"ArcJet middleware error","service":"acquisitions-api","timestamp":"2026-03-04T12:16:29.821Z"}
+{"error":{},"level":"error","message":"ArcJet middleware error","service":"acquisitions-api","timestamp":"2026-03-04T12:23:12.224Z"}
+{"error":{},"level":"error","message":"ArcJet middleware error","service":"acquisitions-api","timestamp":"2026-03-04T12:24:13.198Z"}
+{"error":{},"level":"error","message":"ArcJet middleware error","service":"acquisitions-api","timestamp":"2026-03-04T12:34:52.825Z"}
+{"error":{},"level":"error","message":"ArcJet middleware error","service":"acquisitions-api","timestamp":"2026-03-05T10:02:47.016Z"}
+{"error":{},"level":"error","message":"ArcJet middleware error","service":"acquisitions-api","timestamp":"2026-03-05T10:02:48.126Z"}
+{"error":{},"level":"error","message":"ArcJet middleware error","service":"acquisitions-api","timestamp":"2026-03-05T10:04:21.128Z"}
+{"error":{},"level":"error","message":"ArcJet middleware error","service":"acquisitions-api","timestamp":"2026-03-05T10:11:54.704Z"}
+{"error":{},"level":"error","message":"ArcJet middleware error","service":"acquisitions-api","timestamp":"2026-03-05T10:13:04.467Z"}
+{"error":{},"level":"error","message":"ArcJet middleware error","service":"acquisitions-api","timestamp":"2026-03-05T10:13:04.653Z"}
+{"level":"error","message":"Authentication error: User not found","service":"acquisitions-api","timestamp":"2026-03-09T09:54:54.128Z"}
+{"level":"error","message":"Sign in error User not found","service":"acquisitions-api","stack":"Error: User not found\n    at authenticateUser (file:///home/devplay/acquisitions/src/services/auth.service.js:75:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n    at async signIn (file:///home/devplay/acquisitions/src/controllers/auth.controller.js:66:18)","timestamp":"2026-03-09T09:54:54.141Z"}
+{"level":"error","message":"Authentication error: Invalid password","service":"acquisitions-api","timestamp":"2026-03-09T10:00:04.582Z"}
+{"level":"error","message":"Sign in error Invalid password","service":"acquisitions-api","stack":"Error: Invalid password\n    at authenticateUser (file:///home/devplay/acquisitions/src/services/auth.service.js:83:13)\n    at async signIn (file:///home/devplay/acquisitions/src/controllers/auth.controller.js:66:18)","timestamp":"2026-03-09T10:00:04.585Z"}
+{"level":"error","message":"Authentication error: User not found","service":"acquisitions-api","timestamp":"2026-03-09T10:03:56.178Z"}
+{"level":"error","message":"Sign in error User not found","service":"acquisitions-api","stack":"Error: User not found\n    at authenticateUser (file:///home/devplay/acquisitions/src/services/auth.service.js:75:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n    at async signIn (file:///home/devplay/acquisitions/src/controllers/auth.controller.js:66:18)","timestamp":"2026-03-09T10:03:56.181Z"}
+{"level":"error","message":"Authentication error: Invalid password","service":"acquisitions-api","timestamp":"2026-03-09T10:04:37.754Z"}
+{"level":"error","message":"Sign in error Invalid password","service":"acquisitions-api","stack":"Error: Invalid password\n    at authenticateUser (file:///home/devplay/acquisitions/src/services/auth.service.js:83:13)\n    at async signIn (file:///home/devplay/acquisitions/src/controllers/auth.controller.js:66:18)","timestamp":"2026-03-09T10:04:37.756Z"}
+{"level":"error","message":"Authentication error: Invalid password","service":"acquisitions-api","timestamp":"2026-03-09T10:04:59.855Z"}
+{"level":"error","message":"Sign in error Invalid password","service":"acquisitions-api","stack":"Error: Invalid password\n    at authenticateUser (file:///home/devplay/acquisitions/src/services/auth.service.js:83:13)\n    at async signIn (file:///home/devplay/acquisitions/src/controllers/auth.controller.js:66:18)","timestamp":"2026-03-09T10:04:59.858Z"}
