@@ -15,7 +15,7 @@
   },
   "scripts": {
     "dev": "node --watch src/index.js",
-    "start" : "node src/index.js",
+    "start": "node src/index.js",
     "dev:docker": "docker compose -f docker-compose.dev.yml --env-file .env.development up --build",
     "dev:docker:down": "docker compose -f docker-compose.dev.yml --env-file .env.development down",
     "lint": "eslint .",
@@ -24,7 +24,8 @@
     "format:check": "prettier --check .",
     "db:generate": "drizzle-kit generate",
     "db:migrate": "drizzle-kit migrate",
-    "db:studio": "drizzle-kit studio"
+    "db:studio": "drizzle-kit studio",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
   },
   "repository": {
     "type": "git",
@@ -60,6 +61,8 @@
     "eslint": "^10.0.1",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-prettier": "^5.5.5",
-    "prettier": "^3.8.1"
+    "jest": "^30.3.0",
+    "prettier": "^3.8.1",
+    "supertest": "^7.2.2"
   }
 }

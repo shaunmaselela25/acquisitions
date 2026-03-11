@@ -389,3 +389,8 @@
 {"level":"info","message":"172.19.0.1 - - [11/Mar/2026:10:32:05 +0000] \"GET /health HTTP/1.1\" 200 75 \"-\" \"PostmanRuntime/7.51.1\"","service":"acquisitions-api","timestamp":"2026-03-11T10:32:05.183Z"}
 {"ip":"172.19.0.1","level":"warn","message":"Bot request blocked","path":"/api/users","service":"acquisitions-api","timestamp":"2026-03-11T10:32:16.550Z","userAgent":"PostmanRuntime/7.51.1"}
 {"level":"info","message":"172.19.0.1 - - [11/Mar/2026:10:32:16 +0000] \"GET /api/users HTTP/1.1\" 403 68 \"-\" \"PostmanRuntime/7.51.1\"","service":"acquisitions-api","timestamp":"2026-03-11T10:32:16.558Z"}
+{"level":"info","message":"Hello from acquisitions API!","service":"acquisitions-api","timestamp":"2026-03-11T10:55:54.939Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [11/Mar/2026:10:55:54 +0000] \"GET / HTTP/1.1\" 200 28 \"-\" \"-\"","service":"acquisitions-api","timestamp":"2026-03-11T10:55:54.954Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [11/Mar/2026:10:55:54 +0000] \"GET /health HTTP/1.1\" 200 74 \"-\" \"-\"","service":"acquisitions-api","timestamp":"2026-03-11T10:55:54.978Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [11/Mar/2026:10:55:55 +0000] \"GET /api HTTP/1.1\" 200 41 \"-\" \"-\"","service":"acquisitions-api","timestamp":"2026-03-11T10:55:55.025Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [11/Mar/2026:10:55:55 +0000] \"GET /nonexistent HTTP/1.1\" 404 21 \"-\" \"-\"","service":"acquisitions-api","timestamp":"2026-03-11T10:55:55.067Z"}
