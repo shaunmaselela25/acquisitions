@@ -10,7 +10,7 @@ import {
   deleteUser as deleteUserService,
 } from '#services/users.services';
 
-const getAuthenticatedUser = (req) => {
+const getAuthenticatedUser = req => {
   if (req.user) return req.user;
   const token = cookies.get(req, 'token');
   if (!token) return null;

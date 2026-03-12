@@ -4,7 +4,7 @@ import { db } from '#config/database';
 import { users } from '#models/user.model';
 import { eq } from 'drizzle-orm';
 
-export const hashPassword = async (password) => {
+export const hashPassword = async password => {
   try {
     return await bcrypt.hash(password, 10);
   } catch (error) {

@@ -88,7 +88,9 @@ export const signIn = async (req, res, next) => {
     logger.error('Sign in error', e);
 
     if (e.message === 'User not found' || e.message === 'Invalid password') {
-      logger.warn(`Sign in failed for email "${req.body?.email}": ${e.message}`);
+      logger.warn(
+        `Sign in failed for email "${req.body?.email}": ${e.message}`
+      );
 
       const response = { error: 'Invalid credentials' };
       if (process.env.NODE_ENV !== 'production') {

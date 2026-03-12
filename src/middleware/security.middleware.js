@@ -2,7 +2,9 @@ import aj, { isArcjetConfigured } from '#config/arcjet';
 import logger from '#config/logger';
 
 const RATE_LIMIT_PER_MINUTE = Number(process.env.RATE_LIMIT_PER_MINUTE || 5);
-const RATE_LIMIT_WINDOW_MS = Number(process.env.RATE_LIMIT_WINDOW_MS || 60 * 1000);
+const RATE_LIMIT_WINDOW_MS = Number(
+  process.env.RATE_LIMIT_WINDOW_MS || 60 * 1000
+);
 const PUBLIC_PATHS = new Set(['/health', '/favicon.ico']);
 const requestLogByClient = new Map();
 const BOT_UA_PATTERN = /\b(bot|crawler|spider|scraper|headless)\b/i;
@@ -15,8 +17,11 @@ const normalizeIp = (ip = '') => {
 
 const getClientIp = req => {
   const forwarded = req.headers['x-forwarded-for'];
-  const forwardedIp = typeof forwarded === 'string' ? forwarded.split(',')[0]?.trim() : '';
-  return normalizeIp(forwardedIp || req.ip || req.socket?.remoteAddress || '127.0.0.1');
+  const forwardedIp =
+    typeof forwarded === 'string' ? forwarded.split(',')[0]?.trim() : '';
+  return normalizeIp(
+    forwardedIp || req.ip || req.socket?.remoteAddress || '127.0.0.1'
+  );
 };
 
 const isBotLikeUserAgent = (userAgent = '') => BOT_UA_PATTERN.test(userAgent);
@@ -129,7 +134,6 @@ const securityMiddleware = async (req, res, next) => {
         });
       }
 
-      
       return res.status(403).json({
         error: 'Forbidden',
         message: 'Access denied',
@@ -137,7 +141,6 @@ const securityMiddleware = async (req, res, next) => {
     }
 
     next();
-
   } catch (e) {
     logger.error('ArcJet middleware error', {
       name: e?.name,

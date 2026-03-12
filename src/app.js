@@ -8,7 +8,6 @@ import authRoutes from '#routes/auth.routes';
 import securityMiddleware from '#middleware/security.middleware';
 import usersRoutes from '#routes/users.routes';
 
-
 const app = express();
 
 app.use(helmet());
@@ -17,7 +16,11 @@ app.use(cookieParser());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.use(morgan('combined', { stream: { write: message => logger.info(message.trim()) } }));
+app.use(
+  morgan('combined', {
+    stream: { write: message => logger.info(message.trim()) },
+  })
+);
 
 app.use(securityMiddleware);
 
@@ -29,7 +32,13 @@ app.get('/', (req, res) => {
 });
 
 app.get('/health', (req, res) => {
-  res.status(200).json({ status: 'OK' , timestamp: new Date().toISOString() , uptime: process.uptime() });
+  res
+    .status(200)
+    .json({
+      status: 'OK',
+      timestamp: new Date().toISOString(),
+      uptime: process.uptime(),
+    });
 });
 
 app.get('/api', (req, res) => {
