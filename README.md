@@ -85,3 +85,4 @@ No database URL is hardcoded in application code; runtime uses `process.env.DATA
 - `src/config/database.js` supports Neon Local by honoring:
   - `NEON_LOCAL_FETCH_ENDPOINT`
 - `src/server.js` binds to `0.0.0.0` by default for container networking.
+testing ci/cd pipelines
